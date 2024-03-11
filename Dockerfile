@@ -4,6 +4,6 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . /app
-EXPOSE 5040
+EXPOSE 7070
 
-CMD ["python", "manage.py", "runserver", "0.0.0.0:5040"]
+CMD ["python", "manage.py", "runserver", "0.0.0.0:7070"]
